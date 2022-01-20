@@ -1,0 +1,163 @@
+:root{
+    --primary-color: #00FFCC;
+    --primary-color-variant: #00AA88;
+
+    --logo-width: 216px;
+    --logo-heigth: 416px;
+}
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #222;
+    font-family: 'Roboto Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+path{
+    fill: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* MISC */
+.logo{
+    width: 100%;
+    height: var(--logo-heigth);
+    display: block;
+    margin: 0 auto;
+    background: var(--primary-color)
+                url(../assets/logo.svg)
+                no-repeat
+                center;
+    background-size: auto 30%;
+    transition: 300ms background-size ease-in-out;
+}
+.menu__bar:hover .logo{
+    background-size: auto 90%;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.icon-github{ background: url(../assets/icons/github.svg) no-repeat center; background-size: 100%;}
+.icon-linkedin{ background: url(../assets/icons/linkedin.svg) no-repeat center; background-size: 80% auto;}
+.icon-twitter{ background: url(../assets/icons/twitter.svg) no-repeat center; background-size: 80% auto;}
+
+
+/* MENU */
+.menu__bar{
+    width: 100px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+    transition: 200ms width ease-in;
+}
+.menu__bar:hover{
+    width: 240px;
+    /* animation: 500ms menuHover forwards ; */
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    transition: 300ms margin-top ease-in-out;
+}
+
+.menu ul{
+    width: 100%;
+    list-style: none;
+}
+
+.menu__item{
+    display: flex;
+    margin-bottom: 0.3em;
+    min-height: 2em;
+}
+.menu__item a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #222;
+}
+.menu__item a:hover, .menu__item a:hover path{
+    color: white;
+    fill: white !important;
+}
+.menu__item a:hover, .menu__item a:active{
+    background-color: var(--primary-color-variant);
+    text-decoration: none;
+}
+.menu__item .icon{
+    margin: 0 auto;
+}
+.menu__bar:hover .menu__item .icon{
+    margin: 0;
+    margin-left: 3em;
+}
+
+.menu__item__name{
+    width: 0px; height: 0px;
+    font-size: 0em;
+    margin-left: 0.5em;
+    opacity: 0;
+    transition: 900ms opacity ease-in-out;
+}
+.menu__bar:hover .menu__item__name{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1em;
+    opacity: 1;
+}
+
+
+/* Find-me section */
+.findMe{
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--primary-color-variant);
+
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.findMe *{
+    list-style: none;
+}
+.findMe__list{
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+}
+.findMe__list a{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: block;
+}
+.findMe__list a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 500ms ease-in-out;
+}
+
+@keyframes menuHover {
+    0%{ width: 100px; }
+    100%{ width: 240px; }
+}
