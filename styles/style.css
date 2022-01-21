@@ -63,7 +63,7 @@ a:hover{
     height: 100vh;
     background-color: var(--primary-color);
     
-    position: relative;
+    position: absolute;
 
     display: flex;
     flex-flow: column;
@@ -135,7 +135,7 @@ a:hover{
     box-sizing: border-box;
     text-align: center;
     background-color: var(--primary-color-variant);
-
+    align-self: flex-end;
     position: absolute;
     left: 0; bottom: 0;
 }
@@ -145,6 +145,8 @@ a:hover{
 .findMe__list{
     margin: 1em auto;
     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     justify-content: space-around;
 }
 .findMe__list a{
