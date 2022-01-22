@@ -15,9 +15,14 @@
     padding: 0;
     margin: 0;
 }
+/* SÓ TESTE, MAS QUE FUNCIONA */
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+  
 body{
     background-color: #222;
-    font-family: 'Segoe UI', 'Roboto Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
     font-size: 16px;
     color: white;
