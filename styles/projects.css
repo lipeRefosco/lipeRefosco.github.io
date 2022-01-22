@@ -1,0 +1,79 @@
+:root{
+    --width-img-project-onfocus: calc( (100vw / 9) * 2 );
+}
+
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* PROJECTs DEFAULT */
+.project{
+    position: relative;
+    transition: 200ms transform ease-in-out;
+}
+
+.project__image{
+    width: calc( 100vw / 9 );
+    height: calc( 100vw / 9 );
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project__image img{
+    float: left;
+}
+.project__image figcaption{
+    visibility: hidden;
+}
+
+
+
+/* PROJECTs FOCUS FALSE */
+.project[data-focus="false"] mark::after{
+    visibility: hidden;
+}
+
+.project[data-focus="false"]:hover{
+    transform: scale(110%);
+}
+
+.project[data-focus="false"] .project__name{
+    width: 100%;
+    text-align: center;
+    /* color: black;
+    font-weight: normal; */
+    position: absolute;
+    bottom: calc(50% - 0.5em); left: 0;
+
+}
+
+.project[data-focus="false"] .project__description{
+    visibility: hidden;
+    font-size: 0px;
+}
+
+/* PROJECTs FOCUS TRUE */
+.project[data-focus="true"]{
+    width: 100%;
+    margin: 4em 0;
+}
+
+.project[data-focus="true"] .project__image{
+    width: var(--width-img-project-onfocus);
+    height: var(--width-img-project-onfocus);
+    float: left;
+    margin: 0 4em 0 0;
+    cursor: default;
+}
+
+.project__content{
+    width: calc(
+        100% -
+        ( var(--width-img-project-onfocus)  + 4em ) /* Tamanho da imagem do lado mais margin-right*/
+        
+    );
+    float: left;
+}
