@@ -10,10 +10,6 @@
     --width-img-project-offfocus: calc( 100vw / 9 ) ;
     --width-img-project-onfocus: calc( (100vw / 9) * 2 );
 }
-@font-face {
-    font-family: 'Roboto Mono';
-    src: url(../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
-}
 *{
     padding: 0;
     margin: 0;
@@ -30,6 +26,13 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 ::selection{
     background-color: rgba(255, 102, 0, 0.25);
 }
-path{ fill: white; }
-a{ color: white; text-decoration: none; }
-a:hover{ text-decoration: underline; }
+svg path{
+    fill: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

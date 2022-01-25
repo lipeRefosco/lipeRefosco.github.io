@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
 body{
     background-color: #222;
     font-family: 'Roboto Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -114,20 +118,18 @@ h1, h2, h3, h4, h5, h6{
 
     display: flex;
     flex-flow: column;
-    transition: 200ms width ease-in;
+    transition: 200ms width ease-in,  height 200ms ease-in;
 
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
     z-index: 9999;
 }
 .menu__bar:hover{
     width: 240px;
-    /* animation: 500ms menuHover forwards ; */
 }
 
 .menu{
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
     transition: 300ms margin-top ease-in-out;
 }
 
@@ -170,8 +172,6 @@ h1, h2, h3, h4, h5, h6{
     transition: 1s opacity ease-in-out;
 }
 .menu__bar:hover .menu__item__name{
-    width: fit-content;
-    height: fit-content;
     font-size: 1em;
     opacity: 1;
 }
@@ -226,20 +226,19 @@ h1, h2, h3, h4, h5, h6{
     padding: 10vh 0;
 }
 
-.content__tittle{
+.content__title{
     font-size: 4.5em;
 }
 
-.content__subtittle{
+.content__subtitle{
     font-size: 3em;
 }
 
-.content__subtittle span{
+.content__subtitle span{
     font-weight: bolder;
 }
 
 .content__description{
-    width: 830px;
     text-align: justify;
     font-size: 1.15em;
     font-weight: 300;

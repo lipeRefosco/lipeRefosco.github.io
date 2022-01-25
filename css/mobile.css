@@ -1,0 +1,63 @@
+.findMe{
+    display: none;
+}
+
+.content__subtitle{
+    font-size: 1.5em;
+}
+
+.content__space-bottom{
+    margin-bottom: 48px;
+}
+
+.content{
+    height: 75vh;
+    padding: 15vh;
+}
+
+.menu__bar{
+    width: 100vw;
+    height: 80px;
+    float: left;
+    flex-flow: row wrap;
+    box-shadow: 30px 0px 30px rgba(0, 0, 0, 0.5);
+}
+.menu__bar:hover{
+    width: 100vw;
+    height: 100px;
+}
+.menu__bar:hover .menu__item .icon{
+    margin: 0;
+}
+.menu{
+    width: calc(100vw - 100px);
+    height: 100%;
+}
+.menu ul{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.menu__item *{
+    margin: 0;
+}
+.menu__item a{
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0 5px;
+}
+.menu__item__name{
+    width: fit-content;
+    font-size: 1em;
+    opacity: 1;
+}
+.logo{
+    width: 70px;
+    height: 100%;
+    margin: 0px;
+    background-size: auto 80%;
+}
