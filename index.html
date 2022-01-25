@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <title>refosco.dev | </title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
@@ -93,20 +94,20 @@
     </div>
     <header class="wrapper">
         <section class="content">
-            <h1 id="about" class="content__tittle content__space-bottom"> <mark>Olá!</mark> </h1>
-            <h2 class="content__subtittle content__space-bottom">
+            <h2 id="about" class="content__tittle text__highlight content__space-bottom"> Olá! </h2>
+            <h3 class="content__subtittle content__space-bottom">
                 Meu nome é <span>Felipe Refosco</span>, <br/>
-                sou <mark>Desenvolvedor Front-End!</mark>
-            </h2>
+                sou <mark class="text__highlight"><span>Desenvolvedor Front-End!</span></mark>
+            </h3>
             <p class="content__description content__space-bottom">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius, ex sit amet posuere lacinia, odio nulla maximus massa, eu pharetra mauris ante non nulla. Nam mollis massa at dolor consectetur tincidunt. Sed nec lorem venenatis, congue est sit amet, posuere dolor. Nam blandit lectus quis ligula semper, in eleifend quam fermentum.
             </p>
-            <a class="btn btn__filled btns__space-right" href="contato.html">Entre em contato!</a>
+            <a class="btn btn__filled" href="#contact">Entre em contato!</a>
         </section>
     </header>
     <main class="wrapper">
         <section class="content">
-            <h1 class="content__tittle content__space-bottom"><mark>.projetos</mark></h1>
+            <h2 class="content__tittle text__highlight content__space-bottom">.projetos</h2>
             <div id="projects" class="projects">
                 <article class="project" data-focus="true">
                     <figure class="project__image">
@@ -114,7 +115,7 @@
                         <figcaption></figcaption>
                     </figure>
                     <div class="project__content">
-                        <h3 class="project__name"><mark>Projeto 01</mark></h3>
+                        <h5 class="project__name text__highlight">Projeto 01</h5>
                     <details class="project__description" open>
                         <summary>Descrição do projeto:</summary>
                         <p class="project__description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aperiam, repellat odio reiciendis nihil quis adipisci eum asperiores eveniet laboriosam totam vero aspernatur. Ullam corrupti voluptate nostrum fugit eum minima.</p>
@@ -125,5 +126,31 @@
             </div>
         </section>
     </main>
+    <footer class="wrapper">
+        <section class="content">
+            <h2 id="contact" class="content__tittle text__highlight content__space-bottom">.contato</h2>
+            <form class="form" action="" method="post">
+                <div class="form__row">
+                    <label class="form__label" for="name">Nome:</label>
+                    <input class="form__input" name="name" type="text" placeholder="Digite seu nome...">
+                </div>
+                <div class="form__row">
+                    <label class="form__label" for="email">E-mail:</label>
+                    <input class="form__input" name="email" type="text" placeholder="Digite seu e-mail...">
+                </div>
+                <div class="form__row">
+                    <label class="form__label" for="phone">Telefone:</label>
+                    <input class="form__input" name="phone" type="text" placeholder="(xx) xxxxx-xxxx">
+                </div>
+                <div class="form__row">
+                    <label class="form__label" for="message">Mensagem:</label>
+                    <textarea class="form__input" name="message" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <div class="form__row">
+                    <input class="btn btn__filled" type="button" value="Enviar mensagem">
+                </div>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>

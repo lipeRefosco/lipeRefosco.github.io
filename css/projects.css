@@ -1,9 +1,3 @@
-:root{
-    --width-img-project-offfocus: calc( 100vw / 9 ) ;
-    --width-img-project-onfocus: calc( (100vw / 9) * 2 );
-
-}
-
 .projects{
     display: flex;
     flex-flow: row wrap;
