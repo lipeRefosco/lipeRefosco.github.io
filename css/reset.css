@@ -36,6 +36,6 @@ a{
 a:hover{
     text-decoration: underline;
 }
-button, [type="button"], [type="submit"]{
+button, input, textarea{
     border: none;
 }
