@@ -36,3 +36,6 @@ a{
 a:hover{
     text-decoration: underline;
 }
+button, [type="button"], [type="submit"]{
+    border: none;
+}
