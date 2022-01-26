@@ -1,0 +1,31 @@
+main, header{
+    display: none !important;
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 2em;
+}
+.form__label{
+    width: 100%;
+}
+.form__input{
+    width: 100%;
+    color: white;
+    background-color: #111;
+    outline: 1px solid #000;
+    padding: 1em;
+    border-radius: 0.5em;
+    transition: 300ms outline;
+}
+.form__input:hover{
+    outline: 1px solid var(--primary-color-variant);
+}
+.form__input:focus{
+    outline: 1px solid var(--secondary-color);
+}
+textarea.form__input{
+    width: 100%;
+    resize: none;
+}
